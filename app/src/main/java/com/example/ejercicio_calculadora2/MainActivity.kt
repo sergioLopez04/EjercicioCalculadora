@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -46,54 +45,23 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    var expresion by remember { mutableStateOf("") }
     var resultado by remember { mutableStateOf("") }
 
     Column(
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center,
-        modifier = Modifier.fillMaxSize()
     ) {
-        Text(text = "Calculadora", fontSize = 24.sp)
 
-        Spacer(modifier = Modifier.height(16.dp))
 
-        // Muestra la expresión actual
-        Text(text = expresion, fontSize = 32.sp)
 
-        // Muestra el resultado
-        Text(text = "Resultado: $resultado", fontSize = 24.sp)
 
-        Spacer(modifier = Modifier.height(16.dp))
 
-        // Botones numéricos y de operaciones
-        Column(horizontalAlignment = Alignment.CenterHorizontally) {
-            Row {
-                BotonCalculadora("1") { expresion += "1" }
-                BotonCalculadora("2") { expresion += "2" }
-                BotonCalculadora("3") { expresion += "3" }
-                BotonCalculadora("+") { expresion += "+" }
-            }
-            Row {
-                BotonCalculadora("4") { expresion += "4" }
-                BotonCalculadora("5") { expresion += "5" }
-                BotonCalculadora("6") { expresion += "6" }
-                BotonCalculadora("-") { expresion += "-" }
-            }
-            Row {
-                BotonCalculadora("7") { expresion += "7" }
-                BotonCalculadora("8") { expresion += "8" }
-                BotonCalculadora("9") { expresion += "9" }
-                BotonCalculadora("*") { expresion += "*" }
-            }
-            Row {
-                BotonCalculadora("0") { expresion += "0" }
-                BotonCalculadora("/") { expresion += "/" }
-                BotonCalculadora("C") { expresion = ""; resultado = "" }
-                BotonCalculadora("=") {
-                    resultado = calcularResultado(expresion)
-                    expresion = ""
-                }
+        Row {
+        }
+        Row {
+        }
+        Row {
+        }
+        Row {
+            BotonCalculadora("=") {
             }
         }
     }
