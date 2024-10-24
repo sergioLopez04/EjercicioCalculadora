@@ -29,7 +29,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.ejercicio_calculadora2.ui.theme.Ejercicio_Calculadora2Theme
+import com.example.ejercicio_calculadora.ui.theme.Ejercicio_Calculadora2Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
