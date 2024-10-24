@@ -1,4 +1,4 @@
-package com.example.ejercicio_calculadora2
+package com.example.ejercicio_calculadora
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
